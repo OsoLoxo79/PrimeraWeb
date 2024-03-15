@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+
+        <h1>Los formularios:</h1>
+        <p>estos siempre van a estar dentro de la etiqueta "form" por que de otra forma el lector html no lo reconoce como tal.</p>
+    </header>
+
+    <main>
+        <P>Los formularios son entendidos por el navegador a traves de la etiqueta "input" y sus atributos.</P>
+        <ol>
+            <li>Dentro de la etiqueta "main" va la etiqueta "form"</li>
+            <li>Dentro de la etiqueta "form" va el famoso "input" que es donde el usuario o lector colocara los datos que nosotros estamos interesados en obtener</li>
+        </ol>
+        <p>La etiqueta "input" tiene muchos atributos, los cuales deben ser utilizados para que el usuario o lector sepa que dato debe colocar en el campo</p>
+        <p>El atributo "type" es el que va a dar forma al campo a traves de el tipo de campor que queramos crear. <br> algunos de los tipos son:</p>
+        <ul>
+            <li>text: Deja al usuario escribir en el campo</li>
+            <li>number: El usuario solo puede colocar numeros en el campo</li>
+            <li>password: permite al usuario colocar palabras, letras o simbolos, devolviendo una escritura en puntos para su privacidad</li>
+            <li>Entre muchos otros.</li>
+            <p>Dentro de la etiqueta "imput" ademas del atributo "type" encontramos muchos otros interesantes como:</p>
+            <ul>
+                <li>placeholder: Atributo que nos deja escribir que tipo de dato debe ingresar el usuario.</li>
+                <li>name: Este nos deja hacerle entender al buscador como se llama el espacio en el que el usuario esta rellenando datos.</li>
+            </ul>
+        </ul>
+        <section>
+        <p>Debo hacer una mencion de otra etiqueta llamada "label" que nos permite escribir delante del campo el tipo de informacion que el usuario debe escribir, aunque es facilmente remplazable con el "placeholder" <br> esta etiqueta usa el atributo "for" que hace referencia al "name" de la etiqueta "input" </p>
+
+            <h3>Uso de "input" y "label":</h3>
+            <p>input: inmpt type="text" name="" placeholder""></p>
+            <p>label: label for="(name del inmput)">(texto descriptivo del dato a rellenar) /label></p>
+        </section>
+
+        <h2> de esta forma logramos recaudar datos</h2>
+        <form>
+            <div>
+
+                <input type="text" name="Nombre" placeholder="Nombre">
+            </div>
+            <div>
+
+                <input type="text" name="Apellido" placeholder="Apellido">
+            </div>
+            <div>
+
+                <input type="number" name="Edad" placeholder="Edad">
+            </div>
+            <div>
+
+                <input type="email" name="direccion de correo electronico" placeholder="alguien@gmail.com">
+            </div>
+            <div>
+
+                <input type="password" name="password" placeholder="Contraseña">
+            </div>
+            <div>
+
+                <button>ENVIAR</button>
+
+            </div>
+            <div>
+
+                <img src="gato.jfif" alt="image" height="150" width="300">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
